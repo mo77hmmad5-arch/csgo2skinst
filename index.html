@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>جمر | صناديق الألعاب</title>
+  <meta name="description" content="افتح صناديق الألعاب بسحب عشوائي آمن واحتمالات معلنة قبل الفتح.">
+  <meta name="theme-color" content="#080506">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="sandbox" class="sandbox" hidden>وضع تجريبي: كل الأرصدة افتراضية ولا يوجد دفع حقيقي.</div>
+  <header class="top">
+    <a class="brand" href="#/" aria-label="جمر، الصفحة الرئيسية">جمر</a>
+    <nav id="nav" aria-label="التنقل الرئيسي"></nav>
+    <div id="account" class="account"></div>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <footer class="foot">
+    <p>للبالغين فقط (18 سنة فأكثر). فتح الصناديق يعتمد على الحظ، فالعب بما تستطيع تحمّل خسارته.</p>
+    <p><a href="#/fairness">كيف نضمن العدالة</a> <button type="button" class="link" id="cookie-settings">إعدادات الكوكيز</button></p>
+  </footer>
+
+  <dialog id="login" aria-labelledby="login-title"></dialog>
+  <dialog id="result" aria-labelledby="result-title"></dialog>
+  <dialog id="cookies" aria-labelledby="cookies-title"></dialog>
+  <div id="consent" class="consent" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="/js/app.js" type="module"></script>
+</body>
+</html>
